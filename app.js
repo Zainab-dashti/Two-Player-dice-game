@@ -11,12 +11,15 @@
       scores[currentPlayer - 1] += roll;
       document.getElementById('score' + currentPlayer).innerText = scores[currentPlayer - 1];
       
-      // Switch player
       document.getElementById('p' + currentPlayer).classList.remove('active');
       currentPlayer = currentPlayer === 1 ? 2 : 1;
       document.getElementById('p' + currentPlayer).classList.add('active');
       document.getElementById('turn').innerText = `Player ${currentPlayer}'s turn`;
     }
+
+
+
+
 
     function reset() {
       scores = [0, 0];
